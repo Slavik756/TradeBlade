@@ -1,5 +1,5 @@
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   color: #fff;
   background: #fbfbfb;
   font-weight: 500;
@@ -65,8 +65,8 @@ textarea {
   align-items: center;
 }
 
-.svg-box {
-  width: 114px;
+.icon-blade {
+  width: 118px;
   height: 52px;
   display: flex;
   align-items: center;
@@ -77,11 +77,9 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   padding: 0;
-  border: none;
-  cursor: pointer;
 
   background-color: transparent;
 }
@@ -91,9 +89,6 @@ textarea {
   top: 16px;
   right: 16px;
   background: transparent;
-  border: none;
-  cursor: pointer;
-  display: none;
 }
 
 .header-nav.open .button-menu-close {
@@ -268,6 +263,13 @@ textarea {
   color: #030718;
 }
 
+.button-aut:active,
+.button-reg:active,
+.form-button:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 10px rgba(87, 225, 255, 0.3);
+}
+
 .form-p {
   font-weight: 400;
   font-size: 14px;
@@ -295,7 +297,7 @@ textarea {
   margin-top: 40px;
 }
 
-.trade-number > div {
+.trade-number>div {
   flex: 1 1 150px;
   display: flex;
   flex-direction: column;
@@ -319,9 +321,11 @@ textarea {
   color: #000;
   opacity: 0.8;
 }
+
 .mobile-break {
   display: block;
 }
+
 .number-h2 {
   font-weight: 700;
   font-size: 28px;
@@ -386,6 +390,11 @@ textarea {
   white-space: nowrap;
   padding-bottom: 16px;
   margin-top: 24px;
+  cursor: grab;
+}
+
+.cardlist.active {
+  cursor: grabbing;
 }
 
 .cardlist::-webkit-scrollbar {
@@ -435,37 +444,40 @@ textarea {
   opacity: 0.8;
   margin-top: 20px;
 }
-.comp-p p + p {
+
+.comp-p p+p {
   margin-top: 16px;
 }
 
 .container-TAR {
   padding: 56px 16px 44px;
 }
+
 .TAR-h1 {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.28571;
   letter-spacing: -0.04em;
 }
+
 .mode-switch {
-  display: flex; /* горизонтальное расположение кнопок */
+  display: flex;
   border-radius: 4px;
   background: #6a54ff;
   margin-top: 24px;
-  overflow: hidden; /* чтобы border-radius работал */
-  padding: 4px; /* небольшой отступ внутри контейнера */
+  overflow: hidden;
+  padding: 4px;
   opacity: 0.8;
 }
 
 .switch-btn {
-  flex: 1; /* равная ширина кнопок */
+  flex: 1;
   border: none;
   cursor: pointer;
   transition: 0.3s;
   font-size: 16px;
   font-weight: 500;
-  padding: 12px 16px; /* вертикальный и горизонтальный отступ */
+  padding: 12px 16px;
   color: #57e1ff;
   font-weight: 700;
   font-size: 18px;
@@ -477,8 +489,9 @@ textarea {
 .switch-btn.active {
   background: #57e1ff;
   color: #000000;
-  border-radius: 4px; /* добавляем закругления */
+  border-radius: 4px;
 }
+
 .form-block {
   padding: 16px;
   display: flex;
@@ -490,11 +503,11 @@ textarea {
   height: auto;
   margin-top: 24px;
 }
+
 .form-block:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* Заголовок */
 .plan-title {
   font-weight: 500;
   font-size: 20px;
@@ -503,7 +516,6 @@ textarea {
   color: #fff;
 }
 
-/* Особенности */
 .plan-features {
   display: flex;
   flex-direction: column;
@@ -517,7 +529,6 @@ textarea {
   color: #fff;
 }
 
-/* Блок: цена + скидка + выбор периода */
 .price-box {
   display: flex;
   align-items: center;
@@ -525,10 +536,12 @@ textarea {
   justify-content: space-between;
   gap: 20px;
 }
+
 .price-group {
   display: flex;
   align-items: center;
 }
+
 .price {
   font-weight: 500;
   font-size: 35px;
@@ -542,7 +555,6 @@ textarea {
   margin-bottom: auto;
 }
 
-/* Выбор периода */
 .plan-period {
   background: rgba(255, 255, 255, 0.2);
   padding: 6px 8px;
@@ -556,10 +568,11 @@ textarea {
   font-size: 16px;
   outline: none;
 }
+
 .color-option {
   background-color: #1c1b24;
 }
-/* Кнопка CTA */
+
 .cta-button {
   padding: 12px;
   background: #6a54ff;
@@ -576,6 +589,7 @@ textarea {
   font-size: 14px;
   opacity: 0.8;
 }
+
 .try-btn {
   box-shadow: 0 0 4px 0 #57e1ff;
   background: #57e1ff;
@@ -592,7 +606,20 @@ textarea {
   font-size: 16px;
   line-height: 1.25;
   color: #030718;
+  transition: all 0.2s ease;
 }
+
+.try-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 12px rgba(87, 225, 255, 0.5);
+  background: #45c9ff;
+}
+
+.try-btn:hover {
+  box-shadow: 0 0 12px #57e1ff;
+  background: #5ad4ff;
+}
+
 .trial-text {
   font-weight: 400;
   font-size: 12px;
@@ -600,83 +627,138 @@ textarea {
   color: #030718;
   opacity: 0.56;
 }
+
 .form-block-background {
   background: #6a54ff;
 }
 
 .container-FAQ {
- background: #ffffff;
- padding:56px  16px  154px;
+  background: #ffffff;
+  padding: 56px 16px 154px;
 }
 
 .FAQ-h2 {
   font-weight: 700;
-font-size: 28px;
-line-height: 1.28571;
-letter-spacing: -0.04em;
-text-transform: uppercase;
-color: #030718;
-margin-bottom: 40px;
+  font-size: 28px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #030718;
+  margin-bottom: 40px;
 }
-  .faq-item {
-    background: #ffffff;
-    border-radius: 10px;
-    margin-bottom: 12px;
-    overflow: hidden;
-    border: 1px solid #e0e0e0;
-    transition: all 0.3s ease;
-  }
 
-  .faq-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-    cursor: pointer;
-    background: #EAEFF0;
-    transition: background 0.3s ease, color 0.3s ease;
-font-size: 20px;
-line-height: 1.4;
-letter-spacing: -0.04em;
-color: #030718;
-  }
+.faq-item {
+  background: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
 
-  .faq-item.active .faq-header {
-    background: #6c4bff;
-    color: #ffffff;
-    font-weight: 400;
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+  background: #eaeff0;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+  color: #030718;
+}
 
-  }
+.faq-item.active .faq-header {
+  background: #6c4bff;
+  color: #ffffff;
+  font-weight: 400;
+}
 
-  .faq-arrow {
-    transition: transform 0.3s ease;
-  }
+.faq-arrow {
+  transition: transform 0.3s ease;
+  --color1: #030718;
+}
 
-  .faq-item.active .faq-arrow {
-    background-color: #6c4bff;
-    transform: rotate(180deg);
-  }
+.faq-item.active .faq-arrow {
+  transform: rotate(180deg);
+  --color1: #fff;
+}
 
-  .faq-content {
-    max-height: 0;
-    overflow: hidden;
-    background: #f7f4ff;
-    padding: 0 16px;
-    font-size: 14px;
-    line-height: 1.5;
-    transition: max-height 0.3s ease;
-  }
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #f7f4ff;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: max-height 0.3s ease;
+}
 
-  .faq-item.active .faq-content {
-    background-color: #6c4bff;
-    padding: 16px;
-    max-height: 300px;
-  }
+.faq-item.active .faq-content {
+  background-color: #6c4bff;
+  padding: 16px;
+  max-height: 300px;
+}
+
 .faq-content p {
   font-size: 16px;
-line-height: 1.25;
-color: #fff;
-opacity: 0.8;
+  line-height: 1.25;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.container-footer {
+  padding: 40px 42px 20px 15px;
+}
+
+.footer-top {
+  display: flex;
+  gap: 74px;
+  padding-bottom: 57px;
+  border-bottom: 1px solid #1a2333;
+}
+
+.footer-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+
+.footer-menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  opacity: 0.67;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.footer-h4 {
+  max-width: 107px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 117px;
+}
+
+.footer-bottom p {
+  margin-top: 80px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fff;
+  opacity: 0.5;
 }
 
 @media (min-width: 1200px) {
@@ -697,8 +779,6 @@ opacity: 0.8;
     justify-content: center;
     align-items: center;
   }
-
-  
 
   .header-nav-list {
     display: flex;
@@ -752,7 +832,8 @@ opacity: 0.8;
     fill: currentColor;
     display: block;
   }
+
   .mobile-break {
-    display: inline; /* оставляем в одной строке */
+    display: inline;
   }
 }

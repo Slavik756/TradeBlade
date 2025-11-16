@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Меню открытие/закрытие
+
   const openBtn = document.querySelector('.button-menu-open');
   const closeBtn = document.querySelector('.button-menu-close');
   const nav = document.querySelector('.header-nav');
@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Переключатель Спот / Фьючерс
   const spotBtn = document.getElementById("spotBtn");
   const futuresBtn = document.getElementById("futuresBtn");
   const spotForm = document.getElementById("spotForm");
@@ -35,13 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // FAQ аккордеон для твоей разметки
+
   document.querySelectorAll('.faq-item').forEach(item => {
     const header = item.querySelector('.faq-header');
     const content = item.querySelector('.faq-content');
 
     if (header && content) {
-      // скрываем контент по умолчанию
+
       content.style.maxHeight = item.classList.contains('active') ? content.scrollHeight + 'px' : '0';
       content.style.overflow = 'hidden';
       content.style.transition = 'max-height 0.3s ease';
@@ -55,5 +54,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+  });
+});
+const cardlists = document.querySelectorAll('.cardlist');
+cardlists.forEach(list => {
+
+  list.addEventListener('wheel', e => {
+    e.preventDefault();
+    list.scrollLeft += e.deltaY;
+  });
+
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  list.addEventListener('mousedown', e => {
+    isDown = true;
+    list.classList.add('active');
+    startX = e.pageX - list.offsetLeft;
+    scrollLeft = list.scrollLeft;
+  });
+  list.addEventListener('mouseleave', () => isDown = false);
+  list.addEventListener('mouseup', () => isDown = false);
+  list.addEventListener('mousemove', e => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - list.offsetLeft;
+    const walk = (x - startX) * 2;
+    list.scrollLeft = scrollLeft - walk;
   });
 });

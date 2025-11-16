@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script defer src="./js/core.js"></script>
+  <script defer src="./js/core.js"></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/8801cd3936/UntitledProject/style-svg.css">
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/8801cd3936/UntitledProject/style-svg.css" />
   <script defer src="https://i.icomoon.io/public/temp/8801cd3936/UntitledProject/svgxuse.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -19,21 +19,21 @@
   <header>
     <div class="container">
       <div class="header-box">
-        <div class="svg-box">
+        <div class="icon-blade">
           <svg>
-            <use xlink:href="#icon-Blade"></use>
+            <use href="./img/sprite.svg#icon-Blade"></use>
           </svg>
         </div>
-        <button class="button-menu-open" type="button">
-          <svg class="icon-menu" width="32" height="32">
-            <use xlink:href="#icon-menu"></use>
-          </svg>
 
+        <button class="button-menu-open" type="button">
+          <svg width="32" height="32">
+            <use href="./img/sprite.svg#icon-menu"></use>
+          </svg>
         </button>
         <nav class="header-nav">
           <button class="button-menu-close" type="button">
-            <svg width="32" height="32" class=icon-close">
-              <use xlink:href="#icon-close"></use>
+            <svg width="32" height="32">
+              <use href="./img/sprite.svg#icon-close"></use>
             </svg>
           </button>
           <ul class="header-nav-list">
@@ -106,8 +106,8 @@
       <div class="past-transactions">
         <h1>ПРОШЕДШИЕ СДЕЛКИ</h1>
         <div class="icon-Ellipse-p">
-          <svg width="7" height="7" class="icon-Ellipse">
-            <use xlink:href="#icon-Ellipse"></use>
+          <svg width="7" height="7">
+            <use href="./img/sprite.svg#icon-Ellipse"></use>
           </svg>
           <p class="status-online">Онлайн</p>
         </div>
@@ -154,10 +154,30 @@
         <h3 class="plan-title">STANDART</h3>
 
         <div class="plan-features">
-          <p>✔ Ручной трейдинг</p>
-          <p>✔ Автоматическое или полуавтоматическое копирование сделок</p>
-          <p>✔ Личный кабинет со статистикой</p>
-          <p>✔ Среднесрочные сделки с уровнями набора портфеля</p>
+          <p>
+            <svg width="12" height="12">
+              <use href="./img/sprite.svg#icon-Frame"></use>
+            </svg>
+            Ручной трейдинг
+          </p>
+          <p>
+            <svg width="12" height="12">
+              <use href="./img/sprite.svg#icon-Frame"></use>
+            </svg>
+            Автоматическое или полуавтоматическое копирование сделок
+          </p>
+          <p>
+            <svg width="12" height="12">
+              <use href="./img/sprite.svg#icon-Frame"></use>
+            </svg>
+            Личный кабинет со статистикой
+          </p>
+          <p>
+            <svg width="12" height="12">
+              <use href="./img/sprite.svg#icon-Frame"></use>
+            </svg>
+            Среднесрочные сделки с уровнями набора портфеля
+          </p>
         </div>
 
         <div class="price-box">
@@ -184,12 +204,42 @@
         <h3 class="plan-title">VIP</h3>
 
         <div class="plan-features">
-          <p>✔ Ручной трейдинг</p>
-          <p>✔ Автоматическое или полуавтоматическое копирование сделок</p>
-          <p>✔ Личный кабинет со статистикой</p>
-          <p>✔ Краткосрочные, среднесрочные и инвест сделки</p>
-          <p>✔ Доступ в Vip чат с командой</p>
-          <p>✔ Наш авторский курс по трейдингу</p>
+          <p>
+            <svg width="12" height="12">
+              <use href="./img/sprite.svg#icon-Frame"></use>
+            </svg>
+            Ручной трейдинг
+          </p>
+          <p>
+            <svg width="12" height="12">
+              <use href="./img/sprite.svg#icon-Frame"></use>
+            </svg>
+            Автоматическое или полуавтоматическое копирование сделок
+          </p>
+          <p>
+            <svg width="12" height="12">
+              <use href="./img/sprite.svg#icon-Frame"></use>
+            </svg>
+            Личный кабинет со статистикой
+          </p>
+          <p>
+            <svg width="12" height="12">
+              <use href="./img/sprite.svg#icon-Frame"></use>
+            </svg>
+            Краткосрочные, среднесрочные и инвест сделки
+          </p>
+          <p>
+            <svg width="12" height="12">
+              <use href="./img/sprite.svg#icon-Frame"></use>
+            </svg>
+            Доступ в Vip чат с командой
+          </p>
+          <p>
+            <svg width="12" height="12">
+              <use href="./img/sprite.svg#icon-Frame"></use>
+            </svg>
+            Наш авторский курс по трейдингу
+          </p>
         </div>
 
         <div class="price-box">
@@ -212,6 +262,7 @@
         </button>
       </div>
     </div>
+
     <div class="container container-FAQ" id="FAQ">
       <div class="FAQ-h2">
         <h4>Часто задаваемые вопросы</h4>
@@ -219,49 +270,83 @@
       <div class="faq-item">
         <div class="faq-header">
           Что такое TradeBlade
-          <span class="faq-arrow">▼</span>
+          <span class="faq-arrow"><svg width="24" height="24">
+              <use href="./img/sprite.svg#icon-Frame-29"></use>
+            </svg></span>
         </div>
         <div class="faq-content">
-          <p>Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным
-            брокером биржи Binance.
-<br><br>
-            Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и
-            возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.</p>
+          <p>
+            Мы опытная команда, для которой трейдинг – профессия. TradeBlade
+            является авторизованным официальным брокером биржи Binance.
+            <br /><br />
+            Он представляет пользователям множество преимуществ, таких как
+            более високая скорость синхронизации API и возможность создать
+            учетную запись Binance через платформу TradeBlade всего в 1 клик.
+          </p>
         </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-header">
           Что TradeBlade предлагает инвесторам
-          <span class="faq-arrow">▼</span>
+          <span class="faq-arrow"><svg width="24" height="24">
+              <use href="./img/sprite.svg#icon-Frame-29"></use>
+            </svg></span>
         </div>
         <div class="faq-content">
-          <p>Ми — досвідчена команда для якої трейдинг є професією TradeBlade є офіційним авторизованим брокером біржі
-            Binance
-
-            Завдяки цим можливостям TradeBlade робить трейдинг комфортним і безпечним допомагаючи користувачам ефективно
-            інвестувати та використовувати всі переваги біржі Binance.</p>
-
+          <p>
+            Ми — досвідчена команда для якої трейдинг є професією TradeBlade є
+            офіційним авторизованим брокером біржі Binance Завдяки цим
+            можливостям TradeBlade робить трейдинг комфортним і безпечним
+            допомагаючи користувачам ефективно інвестувати та використовувати
+            всі переваги біржі Binance.
+          </p>
         </div>
       </div>
 
       <div class="faq-item">
         <div class="faq-header">
           Должен ли я перевести свои средства на TradeBlade
-          <span class="faq-arrow">▼</span>
+          <span class="faq-arrow"><svg width="24" height="24">
+              <use href="./img/sprite.svg#icon-Frame-29"></use>
+            </svg></span>
         </div>
         <div class="faq-content">
-          <p>TradeBlade дозволяє користувачам підключати різні торгові інструменти і налаштовувати власні стратегії 
-            
-            Користувачі отримують доступ до аналітики і інструментів які зазвичай доступні лише професійним трейдерам
-            завдяки чому вони можуть працювати на ринку ефективніше і впевненіше.</p>
+          <p>
+            TradeBlade дозволяє користувачам підключати різні торгові
+            інструменти і налаштовувати власні стратегії Користувачі отримують
+            доступ до аналітики і інструментів які зазвичай доступні лише
+            професійним трейдерам завдяки чому вони можуть працювати на ринку
+            ефективніше і впевненіше.
+          </p>
         </div>
       </div>
     </div>
   </main>
-  <footer>
-    <div class="container">
-Footer
+  <footer class="container container-footer">
+    <div class="footer-top">
+      <div class="footer-h4">
+        <h4 class="footer-title">БЫСТРАЯ НАВИГАЦИЯ</h4>
+      </div>
+
+      <ul class="footer-menu">
+       <li><a  href="#number">ЦИФРЫ</a></li>
+            <li><a  href="#online">СДЕЛКИ ОНЛАЙН</a></li>
+            <li><a  href="#companya">О КОМПАНИИ</a></li>
+            <li><a  href="#">КАК НАЧАТЬ</a></li>
+            <li><a  href="#TAR">ТАРИФЫ</a></li>
+            <li><a  href="#">ОТЗЫВЫ</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <svg >
+          <use  href="./img/sprite.svg#icon-Blade"></use>
+        </svg>
+      </div>
+      <p class="copyright">© 2022 TradeBlade. All rights reserved</p>
     </div>
   </footer>
 </body>
