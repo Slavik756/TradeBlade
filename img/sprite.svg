@@ -29,10 +29,8 @@
 <path fill="#5e47ff" style="fill: var(--color5, #5e47ff)" d="M12.669 23.334l-12.669-21.871 6.293 5.050 8.044 13.933-1.668 2.889z"></path>
 <path fill="#5e47ff" style="fill: var(--color5, #5e47ff)" d="M24.562 10.092l-12.607 21.908 1.227-7.975 8.044-13.933h3.336z"></path>
 <path fill="#5e47ff" style="fill: var(--color5, #5e47ff)" d="M7.222 6.552l25.276-0.036-7.52 2.925h-16.088l-1.668-2.889z"></path>
+</symbol>
 <symbol id="icon-Frame-29" viewBox="0 0 32 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M8 19.333l8-8 8 8"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M8 12.667l8 8 8-8"></path>
 </symbol>
-
-</symbol>
-
 </svg>

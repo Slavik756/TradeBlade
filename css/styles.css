@@ -522,7 +522,7 @@ textarea {
   margin-top: 24px;
   overflow: hidden;
   padding: 4px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .switch-btn {
@@ -1053,6 +1053,12 @@ textarea {
     flex: 1;
   }
 
+  .switch-btn {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16667;
+  }
+
   .form-top {
     display: flex;
     flex-direction: column;
@@ -1072,28 +1078,59 @@ textarea {
   }
 
   .try-btn {
-    background: #57e1ff;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    color: #030718;
-    box-shadow: 0 0 4px #57e1ff;
-    transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .try-btn:hover {
-    background: #5ad4ff;
-    box-shadow: 0 0 12px #57e1ff;
+  .plan-title {
+    font-size: 32px;
+    line-height: 1.5;
   }
 
-  .try-btn:active {
-    transform: scale(0.95);
-    box-shadow: 0 4px 12px rgba(87, 225, 255, 0.5);
+  .container-FAQ {
+    padding: 96px 297px;
   }
+
+  .faq-header {
+    font-size: 24px;
+  }
+
+  .container-footer {
+    padding: 44px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-h4 {
+    max-width: 200px;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 215px;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+    border-left: 1px solid #1a2333;
+    padding-left: 166px;
+  }
+
 
   .icon {
     stroke-width: 0;
