@@ -53,7 +53,6 @@ textarea {
 }
 
 .container {
-  max-width: 375px;
   padding: 0 10px;
 
   background-color: #030718;
@@ -214,6 +213,7 @@ textarea {
   font-size: 16px;
   line-height: 1.25;
   opacity: 0.8;
+  color: #e7f7f8;
 }
 
 .field {
@@ -236,9 +236,7 @@ textarea {
 }
 
 .input-field {
-  flex: 1;
   padding: 15px 16px;
-  height: 52px;
   border: none;
   border-radius: 4px;
   font-weight: 500;
@@ -247,13 +245,13 @@ textarea {
   letter-spacing: -0.01em;
   background: #201a4f;
   color: #fff;
+  width: 100%;
 }
 
 .form-button {
   border: 1px solid #57e1ff;
   border-radius: 4px;
   padding: 11px 24px;
-  height: 52px;
   margin-left: 24px;
   background: #57e1ff;
   color: #fff;
@@ -280,7 +278,7 @@ textarea {
 }
 
 .gradient-block {
-  background: linear-gradient(60deg, white 60%, black 50%);
+  background: linear-gradient(60deg, white 60%, #030718 50%);
   width: 100%;
   height: 25px;
 }
@@ -761,12 +759,28 @@ textarea {
   opacity: 0.5;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1240px) {
   .container {
-    max-width: 1440px;
     padding: 0 80px;
     margin: 0 auto;
     background-color: #030718;
+  }
+
+  .header-nav {
+    display: none;
+    /* скрываем кнопку гамбургер */
+    display: flex !important;
+    position: static;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* центрируем по горизонтали */
+    align-items: center;
+    /* центрируем по вертикали */
+    gap: 82px;
   }
 
   .svg-box {
@@ -774,11 +788,6 @@ textarea {
     align-items: center;
   }
 
-  .header-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .header-nav-list {
     display: flex;
@@ -789,9 +798,8 @@ textarea {
   }
 
   .header-list {
+    font-size: 14px;
     line-height: 1.21429;
-    color: #fff;
-    text-decoration: none;
     opacity: 0.7;
   }
 
@@ -801,29 +809,72 @@ textarea {
     justify-content: flex-start;
     flex-direction: row;
     gap: 8px;
+    margin: 13px 13px;
   }
 
   .button-aut {
-    border: 1.5px solid #57e1ff;
-    border-radius: 3px;
+    order: 1;
+    border: 1.50px solid #57e1ff;
     padding: 11px 24px;
-    box-shadow: 0 0 4px 0 #57e1ff;
-    background: rgba(87, 225, 255, 0.2);
-    color: #57e1ff;
-    line-height: 1.42857;
   }
 
   .button-reg {
     border: 1px solid #57e1ff;
-    border-radius: 3px;
     padding: 11px 24px;
-    box-shadow: 0 0 4px 0 #57e1ff;
-    background: #57e1ff;
-    line-height: 1.42857;
   }
 
-  .button-menu-open {
+  .button-menu-open,
+  .button-menu-close {
     display: none;
+  }
+
+  .img-short {
+    width: 469px;
+    height: 209px;
+
+  }
+
+
+  .container-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 128px;
+    padding: 160px 80px 134px;
+  }
+
+  .details {
+    flex: 1;
+    max-width: 600px;
+    order: 1;
+    margin: auto;
+  }
+
+  .container-img-short {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    order: 2;
+  }
+
+  .img-short {
+    width: 400px;
+    height: auto;
+  }
+
+  .h1-title {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  .input-field {
+    padding: 20px 16px;
+    width: 500px;
+  }
+
+  .gradient-block {
+    background: linear-gradient(45deg, white 40%, #030718 35%);
+    height: 60px;
   }
 
   .icon {
