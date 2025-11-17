@@ -233,6 +233,7 @@ textarea {
   position: relative;
   padding: 4px;
   box-sizing: border-box;
+  gap: 24px;
 }
 
 .input-field {
@@ -244,17 +245,15 @@ textarea {
   line-height: 1.25;
   letter-spacing: -0.01em;
   background: #201a4f;
-  color: #fff;
   width: 100%;
+  color: #fff;
 }
 
 .form-button {
   border: 1px solid #57e1ff;
   border-radius: 4px;
   padding: 11px 24px;
-  margin-left: 24px;
   background: #57e1ff;
-  color: #fff;
   font-weight: 500;
   cursor: pointer;
   box-shadow: 0 0 4px 0 #57e1ff;
@@ -420,8 +419,11 @@ textarea {
 }
 
 .comp-container {
-  padding: 16px 24px 100px;
+  display: flex;
+  padding: 24px 16px;
   background-color: #fff;
+  gap: 40px;
+  flex-direction: column;
 }
 
 .comp-h1 {
@@ -439,11 +441,67 @@ textarea {
   line-height: 1.25;
   color: #030718;
   opacity: 0.8;
-  margin-top: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.comp-p p+p {
-  margin-top: 16px;
+.promo-box {
+  background: #6f5aff;
+  padding: 16px;
+  border-radius: 4px;
+  max-width: 630px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.promo-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 630px;
+  border-radius: 4px;
+  position: relative;
+  padding: 4px;
+  box-sizing: border-box;
+  gap: 12px;
+}
+
+.input-button {
+  padding: 15px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: -0.01em;
+  background: #201a4f;
+  width: 100%;
+  color: #fff;
+  opacity: 0.34;
+}
+
+.form-button-input {
+  border: 1px solid #57e1ff;
+  border-radius: 4px;
+  padding: 11px 24px;
+  background: #57e1ff;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 0 4px 0 #57e1ff;
+  color: #030718;
+  width: 100%;
+
 }
 
 .container-TAR {
@@ -468,6 +526,9 @@ textarea {
 }
 
 .switch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   flex: 1;
   border: none;
   cursor: pointer;
@@ -524,6 +585,8 @@ textarea {
   font-size: 16px;
   line-height: 1.25;
   color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
 }
 
 .price-box {
@@ -597,13 +660,14 @@ textarea {
   gap: 0px;
   border-radius: 3px;
   padding: 16px 24px;
-  width: auto;
   height: 52px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   color: #030718;
   transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 24px;
 }
 
 .try-btn:active {
@@ -765,7 +829,6 @@ textarea {
 
   .header-nav {
     display: none;
-    /* скрываем кнопку гамбургер */
     display: flex !important;
     position: static;
     height: auto;
@@ -774,9 +837,7 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* центрируем по горизонтали */
     align-items: center;
-    /* центрируем по вертикали */
     gap: 82px;
   }
 
@@ -873,42 +934,167 @@ textarea {
     background: linear-gradient(45deg, white 40%, #030718 35%);
     height: 60px;
   }
+
   .container-number {
-        display: flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 157px;
     padding: 56px 80px;
   }
-      .trade-number {
-        margin-top: 0;
-        gap: 129px;
-    }
-.trade-number>div {
+
+  .trade-number {
+    margin-top: 0;
+    gap: 129px;
+  }
+
+  .trade-number>div {
     flex: none;
-}
-.number-h2 {
-  font-size: 44px;
-}
-.number-h2-title {
-  font-size: 60px;
-}
-.container-past-transactions {
-      padding: 96px 80px 118px;
-}
-.past-transactions h1 {
-  font-size: 44px;
-}
-.cardlist {
+  }
+
+  .number-h2 {
+    font-size: 44px;
+  }
+
+  .number-h2-title {
+    font-size: 60px;
+  }
+
+  .container-past-transactions {
+    padding: 96px 80px 118px;
+  }
+
+  .past-transactions h1 {
+    font-size: 44px;
+  }
+
+  .cardlist {
     padding-bottom: 24px;
     margin-top: 72px;
-}
-.cards {
-  display: inline-flex;
-  gap: 20px;
-}
-.comp-container {
-  padding: 56px 80px 92px;
-}
+  }
+
+  .cards {
+    display: inline-flex;
+    gap: 20px;
+  }
+
+  .comp-container {
+    padding: 56px 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 237px;
+  }
+
+  .comp-h1 {
+    font-size: 44px;
+  }
+
+  .promo-box {
+    padding: 32px 64px;
+    max-height: 236px;
+  }
+
+  .promo-title {
+    font-size: 28px;
+  }
+
+  .form-button-input {
+    padding: 16px 24px;
+    width: auto;
+    height: auto;
+  }
+
+  .form-input {
+    display: flex;
+    flex-direction: row;
+    background: #4a3bb3;
+    width: 498px;
+  }
+
+  .input-button {
+    font-size: 16px;
+    line-height: 1.25;
+    background: #4a3bb3;
+  }
+
+  .container-TAR {
+    padding: 96px 297px;
+  }
+
+  .TAR-h1 {
+    font-size: 44px;
+  }
+
+  .forms-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .plan-flex {
+    gap: 56px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mode-switch {
+    max-width: 413px;
+    max-height: 52px;
+  }
+
+  .form-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #6a54ff;
+    border-radius: 8px;
+    gap: 56px;
+    min-width: 250px;
+    flex: 1;
+  }
+
+  .form-top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .try-btn {
+    background: #57e1ff;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #030718;
+    box-shadow: 0 0 4px #57e1ff;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .try-btn:hover {
+    background: #5ad4ff;
+    box-shadow: 0 0 12px #57e1ff;
+  }
+
+  .try-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 12px rgba(87, 225, 255, 0.5);
+  }
+
   .icon {
     stroke-width: 0;
     stroke: currentColor;
