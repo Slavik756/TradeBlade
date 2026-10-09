@@ -1,0 +1,10 @@
+:root {
+  color-scheme: dark;
+  --font:
+    'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --bg: #080d19;
+  --text: #ecf0f7;
+  --muted: #9ba6bb;
+  --accent: #66e8d5;
+  --border: #ffffff12;
+}
