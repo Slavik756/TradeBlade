@@ -1789,6 +1789,170 @@ input::placeholder {
     text-align: center;
   }
 }
+/* Readable desktop type scale; keep this after the compact layouts. */
+@media (min-width: 1001px) {
+  body {
+    --muted: #b0bbce;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  h1,
+  h2,
+  .steps-grid h3,
+  .plan h3 {
+    font-weight: 600;
+  }
+  .nav-links a {
+    color: #c2cada;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .button,
+  .button-small,
+  .email-form .button,
+  .cta-panel > .button,
+  .email-form input,
+  .text-link,
+  .hero-link,
+  .footer-main nav,
+  .pricing-trial {
+    font-size: 16px;
+  }
+  .button-small {
+    min-height: 48px;
+  }
+  .email-form .button {
+    min-height: 52px;
+  }
+  .hero-description {
+    max-width: 560px;
+    font-size: 20px;
+    line-height: 1.65;
+  }
+  .desktop-break {
+    display: none;
+  }
+  .heading-description,
+  .steps-grid p,
+  .about-copy > p,
+  .about-copy > p + p,
+  .plan-description,
+  .feature-list li,
+  .faq-intro > p:last-child,
+  .faq-list details > p,
+  .cta-panel p:last-child,
+  #signup-context,
+  #signup-form input {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  .steps-grid h3 {
+    font-size: 22px;
+  }
+  .faq-list summary {
+    font-size: 20px;
+  }
+  .eyebrow,
+  .hero-copy > .eyebrow,
+  .stats-intro .eyebrow,
+  .cta-panel .eyebrow,
+  .signup-dialog > .eyebrow,
+  .micro-label,
+  .form-note,
+  .stats-intro > p:last-child,
+  .stats dt,
+  .stats-note,
+  .quiet-label,
+  .trade-kind,
+  .trade-card-bottom,
+  .section-footnote,
+  .price-note,
+  .footer-bottom,
+  .hero-bottom,
+  .hero-bottom a {
+    font-size: 14px;
+  }
+  .hero-copy > .eyebrow,
+  .stats-intro .eyebrow,
+  .cta-panel .eyebrow {
+    letter-spacing: 0.08em;
+  }
+  .stats-intro h2 {
+    font-size: 28px;
+  }
+  .stats-note,
+  .section-footnote,
+  .price-note,
+  .footer-bottom {
+    color: var(--muted);
+  }
+  .plan-price > span,
+  .pair,
+  .dialog-notice,
+  #signup-form label,
+  #signup-feedback {
+    font-size: 16px;
+  }
+  .plan-price > .discount,
+  .plan-badge,
+  .direction {
+    font-size: 12px;
+  }
+  .plan-badge {
+    max-width: 170px;
+    text-align: center;
+  }
+  .trades-track {
+    grid-auto-columns: max(290px, calc((100% - 54px) / 4));
+  }
+  .trade-return {
+    font-size: 40px;
+  }
+  .terminal-brand,
+  .terminal-table,
+  .floating-trade strong {
+    font-size: 14px;
+  }
+  .terminal .micro-label,
+  .demo-tag,
+  .change,
+  .chart-heading,
+  .chart-labels,
+  .chart-dates,
+  .terminal-table .terminal-table-head,
+  .closed-tag,
+  .floating-trade div > span,
+  .terminal-caption {
+    font-size: 12px;
+  }
+  .balance {
+    font-size: 34px;
+  }
+  .balance > span {
+    font-size: 16px;
+  }
+  .chart {
+    padding-right: 50px;
+  }
+  .chart-dates {
+    margin-right: 50px;
+  }
+  .terminal-table > div {
+    grid-template-columns: 1.35fr 0.9fr 0.9fr;
+  }
+  .floating-trade {
+    position: relative;
+    bottom: auto;
+    left: -20px;
+    width: fit-content;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .terminal-caption {
+    margin-top: 16px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
