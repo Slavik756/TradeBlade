@@ -1953,6 +1953,63 @@ input::placeholder {
   }
 }
 
+/* Adapt hero spacing to the available height without scaling readable text. */
+@media (min-width: 1001px) {
+  .hero-layout {
+    min-height: 0;
+    padding-block: clamp(32px, 5svh, 64px);
+  }
+  .terminal-scene {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1001px) and (max-height: 800px) {
+  .hero-layout {
+    padding-block: clamp(24px, 4svh, 32px);
+  }
+  .hero-copy > .eyebrow {
+    margin-bottom: 20px;
+  }
+  .hero-description {
+    margin-top: 20px;
+  }
+  .email-form {
+    margin-top: 24px;
+  }
+  .hero-link {
+    margin-top: 20px;
+  }
+  .terminal-top {
+    padding-block: 12px;
+  }
+  .terminal-content {
+    padding-top: 18px;
+  }
+  .chart-heading {
+    margin-top: 18px;
+  }
+  .chart {
+    height: clamp(112px, 16svh, 128px);
+  }
+  .chart-dates {
+    margin-bottom: 12px;
+  }
+  .terminal-table > div {
+    padding-block: 9px;
+  }
+  .floating-trade {
+    margin-top: 12px;
+    padding-block: 10px;
+  }
+  .terminal-caption {
+    margin-top: 10px;
+  }
+  .hero-bottom {
+    padding-block: 12px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
